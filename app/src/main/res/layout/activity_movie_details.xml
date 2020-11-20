@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191926">
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="0dp"
+      android:layout_height="298dp"
+      android:contentDescription="@string/movie_banner_description"
+      android:scaleType="centerCrop"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/orig" />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="298dp"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/bottom_to_top_gradient"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/btn_back"
+      android:textColor="#737373"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      android:padding="0dp"
+      android:layout_marginTop="55dp"
+      style="@style/Widget.AppCompat.Button.Borderless"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_left"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="16dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_right"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_end="16dp" />
+
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/movie_title"
+      android:layout_marginTop="254dp"
+      style="@style/movie_title"
+      app:layout_constraintStart_toStartOf="@id/guideline_left"
+      app:layout_constraintEnd_toStartOf="@id/guideline_right"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
