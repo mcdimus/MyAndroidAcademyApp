@@ -14,10 +14,4 @@
     <!-- Customize your theme here. -->
   </style>
 
-  <style name="movie_title">
-    <item name="android:textColor">#ECECEC</item>
-    <item name="android:textSize">40sp</item>
-    <item name="android:textStyle">bold</item>
-  </style>
-
 </resources>
