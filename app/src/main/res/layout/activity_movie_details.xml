@@ -15,7 +15,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="298dp"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/movie_banner_description"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
