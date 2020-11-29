@@ -4,7 +4,7 @@
 
   <string name="open_movie_details">Open Movie Details</string>
   <string name="movie_banner_description">Movie Banner</string>
-  <string name="btn_back"><![CDATA[< Back]]></string>
+  <string name="btn_back">Back</string>
   <string name="movie_title">Avengers: End&#160;Game</string>
   <string name="movie_genre">Action, Adventure, Fantasy</string>
   <string name="_125_reviews">125 Reviews</string>
