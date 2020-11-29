@@ -104,7 +104,9 @@
         android:theme="@style/StyleRatingBar"
         app:layout_constraintEnd_toStartOf="@id/movie_rating"
         app:layout_constraintStart_toEndOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/movie_genre" />
+        app:layout_constraintTop_toTopOf="@id/movie_review_counter"
+        app:layout_constraintBottom_toBottomOf="@id/movie_review_counter"
+        />
 
     <TextView
         android:id="@+id/movie_review_counter"
