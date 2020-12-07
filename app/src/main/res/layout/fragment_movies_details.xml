@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_primary"
-    tools:context=".MovieDetailsActivity">
+    tools:context=".FragmentMoviesDetails">
 
   <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
@@ -34,6 +34,7 @@
         app:layout_constraintBottom_toBottomOf="@id/imageView" />
 
     <Button
+        android:id="@+id/back_btn"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,7 +167,7 @@
         android:contentDescription="@string/movie_actor_photo_description_downey"
         android:layout_marginTop="7dp"
         app:srcCompat="@drawable/downey"
-        app:shapeAppearanceOverlay="@style/circleImageViewStyle"
+        app:shapeAppearanceOverlay="@style/StyleCircleImageView"
         app:layout_constraintStart_toEndOf="@id/guideline_left"
         app:layout_constraintEnd_toStartOf="@id/imgEvans"
         app:layout_constraintTop_toBottomOf="@+id/movie_cast_header"
@@ -191,7 +192,7 @@
         android:contentDescription="@string/movie_actor_photo_description_evans"
         android:layout_marginTop="7dp"
         app:srcCompat="@drawable/evans"
-        app:shapeAppearanceOverlay="@style/circleImageViewStyle"
+        app:shapeAppearanceOverlay="@style/StyleCircleImageView"
         app:layout_constraintEnd_toStartOf="@id/imgRuffalo"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toEndOf="@id/imgDowney"
@@ -216,7 +217,7 @@
         android:contentDescription="@string/movie_actor_photo_description_ruffalo"
         android:layout_marginTop="7dp"
         app:srcCompat="@drawable/ruffalo"
-        app:shapeAppearanceOverlay="@style/circleImageViewStyle"
+        app:shapeAppearanceOverlay="@style/StyleCircleImageView"
         app:layout_constraintEnd_toStartOf="@id/imgHemsWorth"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toEndOf="@id/imgEvans"
@@ -241,7 +242,7 @@
         android:contentDescription="@string/movie_actor_photo_description_hemsworth"
         android:layout_marginTop="7dp"
         app:srcCompat="@drawable/hemsworth"
-        app:shapeAppearanceOverlay="@style/circleImageViewStyle"
+        app:shapeAppearanceOverlay="@style/StyleCircleImageView"
         app:layout_constraintStart_toEndOf="@id/imgRuffalo"
         app:layout_constraintEnd_toStartOf="@id/guideline_right"
         app:layout_constraintTop_toBottomOf="@id/movie_cast_header"

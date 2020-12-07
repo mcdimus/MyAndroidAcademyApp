@@ -2,10 +2,11 @@ plugins {
   id("com.android.application")
   kotlin("android")
   kotlin("kapt")
+  id("kotlin-android")
 }
 
 android {
-  compileSdkVersion (30)
+  compileSdkVersion(30)
   buildToolsVersion = "30.0.2"
 
   defaultConfig {
@@ -20,7 +21,7 @@ android {
 
   buildTypes {
     getByName("release") {
-      minifyEnabled (false)
+      minifyEnabled(false)
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
     }
   }
@@ -39,8 +40,9 @@ dependencies {
   implementation("androidx.appcompat:appcompat:1.2.0")
   implementation("com.google.android.material:material:1.2.1")
   implementation("androidx.constraintlayout:constraintlayout:2.0.4")
-  implementation("androidx.navigation:navigation-fragment-ktx:2.3.1")
-  implementation("androidx.navigation:navigation-ui-ktx:2.3.1")
+  implementation("androidx.navigation:navigation-fragment-ktx:2.3.2")
+  implementation("androidx.navigation:navigation-ui-ktx:2.3.2")
+  implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
   testImplementation("junit:junit:4.13.1")
   androidTestImplementation("androidx.test.ext:junit:1.1.2")

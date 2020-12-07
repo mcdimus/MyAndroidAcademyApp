@@ -20,4 +20,8 @@
   <string name="movie_actor_photo_description_evans">Evans Photo</string>
   <string name="movie_actor_photo_description_ruffalo">Ruffalo Photo</string>
   <string name="movie_actor_photo_description_hemsworth">Hemsworth Photo</string>
+  <string name="movies_list_label">Movies list</string>
+  <string name="movies_list_poster_description">Avengers Poster</string>
+  <string name="movie_list_age">13+</string>
+  <string name="movie_list_movie_duration">137 min</string>
 </resources>
