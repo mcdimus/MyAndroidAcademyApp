@@ -1,25 +1,35 @@
 package ee.mcdimus.androidacademyapp
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), FragmentNavigationListener {
+
+  private val rootFragment = FragmentMoviesList()
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
 
-    val pushButton = findViewById<Button>(R.id.btn_open_movie_details)
-    pushButton.setOnClickListener {
-      startMovieDetailsActivity()
+    if (savedInstanceState == null) {
+      supportFragmentManager.beginTransaction().apply {
+        add(R.id.main_content, rootFragment)
+        commit()
+      }
     }
   }
 
-  private fun startMovieDetailsActivity() {
-    val intent = Intent(this, MovieDetailsActivity::class.java)
-    startActivity(intent)
+  override fun toList() {
+    supportFragmentManager.popBackStack()
+  }
+
+  override fun toDetails() {
+    val detailsFragment = FragmentMoviesDetails()
+    supportFragmentManager.beginTransaction().apply {
+      add(R.id.main_content, detailsFragment)
+      addToBackStack("toDetails")
+      commit()
+    }
   }
 
 }
