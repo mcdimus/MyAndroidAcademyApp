@@ -1,3 +1,11 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="movies_list_top_gap">44dp</dimen>
+  <dimen name="movies_list_card_width">170dp</dimen>
+  <dimen name="movies_list_card_height">296dp</dimen>
+  <dimen name="movies_list_card_radius">8dp</dimen>
+  <dimen name="movies_list_card_age_rect_size">24dp</dimen>
+  <dimen name="movies_list_main_margin_start">12dp</dimen>
+  <dimen name="movies_list_poster_height">248dp</dimen>
+  <dimen name="movies_list_poster_margin">1dp</dimen>
 </resources>
