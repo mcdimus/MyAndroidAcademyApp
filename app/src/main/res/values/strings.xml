@@ -20,4 +20,6 @@
   <string name="movie_actor_photo_description_evans">Evans Photo</string>
   <string name="movie_actor_photo_description_ruffalo">Ruffalo Photo</string>
   <string name="movie_actor_photo_description_hemsworth">Hemsworth Photo</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
